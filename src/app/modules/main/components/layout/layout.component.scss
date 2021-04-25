@@ -1,0 +1,10 @@
+@import './variables.scss';
+
+
+.stiky {
+  background-color: $warn;
+  position: sticky;
+  bottom: 10px;
+  width: 90%;
+  margin: 0 5%;
+}

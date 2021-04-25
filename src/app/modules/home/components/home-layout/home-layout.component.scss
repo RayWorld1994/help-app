@@ -1,21 +1,41 @@
 @import './variables.scss';
 
 :host {
-  display: block;
+  display: flex;
   padding: 10px;
+  gap: 10px;
 }
 
 .logo {
   img {
     width: 100%;
-    max-width: 500px;
+    max-width: 300px;
     height: auto;
+    flex-grow: 0;
   }
 
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
   padding-bottom: 20px;
   height: calc(100vh - 60px);
   margin-top: -10px;
+  flex: 1;
+}
+
+.nav {
+  flex: 1;
+}
+
+p {
+  font-family: 'Original Surfer', cursive;
+  text-align: center;
+}
+.stiky {
+  background-color: $warn;
+  // position: sticky;
+  // bottom: 10px;
+  // width: 90%;
+  // margin: 0 5%;
 }
